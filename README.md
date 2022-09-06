@@ -59,9 +59,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<br />
-<br />
-
 Meal Dash is a food ordering web application.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
