@@ -62,13 +62,6 @@
 <br />
 <br />
 
-<div align="center">
-  <img src="images/esplanade_scene.png" alt="Esplanade Scene" >
-</div>
-
-<br />
-<br />
-
 Meal Dash is a food ordering web application.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
