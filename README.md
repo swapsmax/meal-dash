@@ -59,9 +59,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<br />
-<br />
-
 Meal Dash is a food ordering web application.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -70,9 +67,13 @@ Meal Dash is a food ordering web application.
 
 ### Built With (TO BE UPDARED)
 
-Here is a list of major frameworks/libraries and softwares used in the development of the game.
+Here is a list of softwares and languages used in the development of the web app.
 
-* [Firebase](https://firebase.google.com/)
+* HTML
+* CSS
+* PHP
+* SQL
+* XAMPP
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
