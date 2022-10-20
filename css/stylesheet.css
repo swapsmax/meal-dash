@@ -4,7 +4,9 @@
     font-family: sans-serif;
 }
 
+
 /* header and nav */
+
 .header {
     position: sticky;
     top:0; left:0; right:0;
@@ -37,3 +39,76 @@
 .icons span {
     margin-left: 10px;
 }
+
+
+/* carousell */
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+}
+
+.slide {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 60px;
+}
+
+.slide .image {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.slide .image img {
+    width: 80%;
+}
+
+.slide .content {
+    flex: 1 1 100px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.slide .content h3 {
+    margin:10px 10px 10px 0;
+    font-size: 50px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.slide .content span {
+    font-size: 20px;
+    color: gray;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {  /* on smaller screens, decrease text size */
+    .text {font-size: 11px}
+  }
