@@ -33,7 +33,7 @@
 
 		<div class="slide fade">
 			<div class="content">
-				<span>Available Online Now</span>
+				<span>Available Now</span>
 				<h3>Capricciosa Special</h3>
 				<a href="menu.php" class="btn">View Menu</a>
 			</div>
@@ -43,7 +43,7 @@
 		</div>
 		<div class="slide fade">
 			<div class="content">
-				<span>Available Online Now</span>
+				<span>Available Now</span>
 				<h3>v stacked doublecheese</h3>
 				<a href="menu.php" class="btn">View Menu</a>
 			</div>
@@ -53,7 +53,7 @@
 		</div>
 		<div class="slide fade">
 			<div class="content">
-				<span>Available Online Now</span>
+				<span>Available Now</span>
 				<h3>chimken</h3>
 				<a href="menu.php" class="btn">View Menu</a>
 			</div>
