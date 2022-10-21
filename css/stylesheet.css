@@ -1,0 +1,39 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+* {
+    font-family: sans-serif;
+}
+
+/* header and nav */
+.header {
+    position: sticky;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background-color: white;
+    border-bottom: 1.5px solid black;
+    padding: 30px 30px 30px 30px;
+}
+
+.nav {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: black;
+    margin: 0 22px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.navbar a:hover {
+    color: #C0C0C0;
+}
+
+.icons span {
+    margin-left: 10px;
+}
