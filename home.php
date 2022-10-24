@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<?php include 'components/user_header.php'; ?>
+	<?php include 'components/nav_header.php'; ?>
 
 	<div class="carousel">
 
@@ -99,7 +99,7 @@
 </body>
 
 <footer>
-	Copyright &copy; 2022 <a href="">Meal Dash</a>
+	<?php include 'components/footer.php'; ?>
 </footer>
 
 </html>
