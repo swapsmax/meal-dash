@@ -1,6 +1,6 @@
 <header class="header">
 	<nav class="nav">
-		<a href="home.php" class="logo">Meal Dash Logo</a>
+		<a href="home.php" class="logo">Logo</a>
 		<nav class="navbar">
 			<a href="home.php">Home</a>
 			<a href="about.php">About</a>
