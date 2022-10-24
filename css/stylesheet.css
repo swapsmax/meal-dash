@@ -4,6 +4,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.title {
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+}
 
 /* header and nav */
 
@@ -28,12 +35,13 @@
     font-size: 18px;
     color: black;
     margin: 0 22px;
-    text-decoration: none;
-    transition: 0.25s;
+    text-decoration: underline solid transparent;
+    transition: 0.2s linear;
 }
 
 .navbar a:hover {
-    color: #C0C0C0;
+    color: #FFB900;
+    text-decoration: underline;
 }
 
 .icons span {
@@ -41,19 +49,23 @@
 }
 
 
-/* carousell */
+/* carousel */
 
-.slideshow-container {
+.carousel {
     position: relative;
-    margin: auto;
-    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    /* max-width: 80%;
+    margin: auto; */
+    /* padding: 20px 20px 20px 20px; */
 }
 
 .slide {
     display: flex;
     text-align: center;
-    flex-wrap: wrap-reverse;
-    margin-bottom: 60px;
+    /* flex-wrap: wrap-reverse; */
 }
 
 .slide .image {
@@ -63,7 +75,7 @@
 }
 
 .slide .image img {
-    width: 80%;
+    width: 70%;
 }
 
 .slide .content {
@@ -74,15 +86,32 @@
 }
 
 .slide .content h3 {
-    margin:10px 10px 10px 0;
-    font-size: 50px;
+    margin:10px 10px 0 10px;
+    font-size: 40px;
     color: black;
-    text-transform: capitalize;
 }
 
 .slide .content span {
     font-size: 20px;
     color: gray;
+}
+
+.slide .content .btn {
+    margin-top: 16px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 12px 28px;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-color: #FFB900;
+    color: black;
+    text-decoration: underline solid transparent;
+    transition: 0.2s linear;
+}
+
+.slide .content .btn:hover {
+    text-decoration: underline solid black;
+    background-color: white;
 }
 
 .dot {
@@ -112,3 +141,72 @@
 @media only screen and (max-width: 300px) {  /* on smaller screens, decrease text size */
     .text {font-size: 11px}
   }
+
+/* categories */
+
+.category {
+    margin: 80px 40px 40px 40px;
+}
+
+.category .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: flex;
+    max-width: 80%;
+    margin: auto;
+}
+
+.category .container .box {
+    border: 1.5px solid black;
+    padding: 23px 0 0 0;
+    margin: 12px;
+    text-align: center;
+    transition: 0.2s linear;
+}
+
+.category .container .box img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
+
+.category .container .box h3{
+    margin-top: 8px;
+    color: black;
+    text-decoration: underline solid white;
+    transition: 0.2s linear;
+ }
+ 
+.category .container .box:hover{
+    background-color: black;
+ }
+ 
+ .category .container .box:hover img{
+    filter: invert(1);
+ }
+ 
+ .category .container .box:hover h3{
+    color: white;
+    text-decoration: underline solid black;
+ }
+
+ .latest-items .more-btn {
+    text-align: center;
+ }
+
+ .latest-items .more-btn .btn {
+    margin-top: 16px;
+    font-size: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-color: #FFB900;
+    color: black;
+    text-decoration: underline solid transparent;
+    transition: 0.2s linear;
+ }
+
+ .latest-items .more-btn .btn:hover {
+    text-decoration: underline solid black;
+    background-color: white;
+ }

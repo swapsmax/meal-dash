@@ -9,13 +9,13 @@
 </head>
 <body>
 
-<?php include 'components/nav_header.php'; ?>
+	<?php include 'components/user_header.php'; ?>
 
-	<div class="carousell-container">
+	<div class="carousel">
 
 		<div class="slide fade">
 			<div class="content">
-				<span>Available Now</span>
+				<span>available now</span>
 				<h3>Capricciosa Special</h3>
 				<a href="menu.php" class="btn">View Menu</a>
 			</div>
@@ -23,9 +23,10 @@
 				<img src="images/home-img-1.png" alt="">
 			</div>
 		</div>
+
 		<div class="slide fade">
 			<div class="content">
-				<span>Available Now</span>
+				<span>available now</span>
 				<h3>v stacked doublecheese</h3>
 				<a href="menu.php" class="btn">View Menu</a>
 			</div>
@@ -33,9 +34,10 @@
 				<img src="images/home-img-2.png" alt="">
 			</div>
 		</div>
+
 		<div class="slide fade">
 			<div class="content">
-				<span>Available Now</span>
+				<span>available now</span>
 				<h3>chimken</h3>
 				<a href="menu.php" class="btn">View Menu</a>
 			</div>
@@ -43,7 +45,6 @@
 				<img src="images/home-img-3.png" alt="">
 			</div>
 		</div>
-
 	</div>
 	<br>
 	<!-- carousell dots -->
@@ -51,6 +52,48 @@
 		<span class="dot"></span> 
 		<span class="dot"></span> 
 		<span class="dot"></span> 
+	</div>
+
+	<div class="category">
+		<h1 class="title"><b>FOOD CATEGORIES</b></h1>
+		<div class="container">
+
+			<a href="category.php?category=sides" class="box">
+				<img src="images/cat-1.png" alt="">
+				<h3>Side Dishes</h3>
+      		</a>
+
+			<a href="category.php?category=mains" class="box">
+				<img src="images/cat-2.png" alt="">
+				<h3>Main Dishes</h3>
+      		</a>
+
+			<a href="category.php?category=drinks" class="box">
+				<img src="images/cat-3.png" alt="">
+				<h3>Drinks</h3>
+      		</a>
+
+			<a href="category.php?category=desserts" class="box">
+				<img src="images/cat-4.png" alt="">
+				<h3>Desserts</h3>
+      		</a>
+		</div>
+	</div>
+
+	<div class="latest-items">
+		<h1 class="title"><b>LATEST DISHES</b></h1>
+		
+		<div class="container">
+			<!-- php stuff to view items from database -->
+
+			<form action="" method="post" class="box">
+				<!-- php stuff to add items into cart -->
+			</form>
+		</div>
+
+		<div class="more-btn">
+			<a href="menu.php" class="btn">View Full Menu</a>
+		</div>
 	</div>
 
 </body>
