@@ -55,7 +55,7 @@
 	</div>
 
 	<div class="category">
-		<h1 class="title"><b>FOOD CATEGORIES</b></h1>
+		<h1 class="title" style="text-decoration: underline solid transparent;"><b>Categories</b></h1>
 		<div class="container">
 
 			<a href="category.php?category=sides" class="box">
@@ -81,7 +81,7 @@
 	</div>
 
 	<div class="latest-items">
-		<h1 class="title"><b>LATEST DISHES</b></h1>
+		<h1 class="title" style="text-decoration: underline solid transparent;"><b>Latest Dishes</b></h1>
 		
 		<div class="container">
 			<!-- php stuff to view items from database -->

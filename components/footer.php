@@ -1,36 +1,53 @@
-<footer class="footer">
+<footer class="footer-distributed">
 
-   <section class="grid">
+         <div class="footer-left">
 
-      <div class="box">
-         <img src="images/email-icon.png" alt="">
-         <h3>Our Emails</h3>
-         <a href="mailto:swapnil@bapat.com">swapnil@bapat.com</a>
-         <a href="mailto:jessie@jessie.com">jessie@jessie.com</a>
-      </div>
+            <h3><span>Meal Dash</span></h3>
 
-      <div class="box">
-         <img src="images/clock-icon.png" alt="">
-         <h3>Opening Hours</h3>
-         <p>00:00am to 00:10pm</p>
-      </div>
+            <p class="footer-links">
+               <a href="#" class="link-1">Home</a>
+               
+               <a href="#">About</a>
+            
+               <a href="#">Menu</a>
+            
+               <a href="#">Contact Us</a>
+               
+               <a href="#">Orders</a>
+               
+            </p>
 
-      <div class="box">
-         <img src="images/map-icon.png" alt="">
-         <h3>Our Address</h3>
-         <a href="#">Singapore - 123456</a>
-      </div>
+            <p class="footer-company-name">Swapnil & Jessie © 2022</p>
+         </div>
 
-      <div class="box">
-         <img src="images/phone-icon.png" alt="">
-         <h3>Our Number</h3>
-         <a href="tel:1234567890">123-456-7890</a>
-         <a href="tel:1112223333">111-222-3333</a>
-      </div>
+         <div class="footer-center">
 
-   </section>
+            <div>
+               <i class="fa fa-map-marker"></i>
+               <p><span>123 Nanyang Avenue</span> Nanyang Crescent, Singapore</p>
+            </div>
 
-   <div class="credit">&copy; Copyright @ <?= date('Y'); ?> by <span>Swapnil & Jessie </span> | All Rights Reserved.</div>
+            <div>
+               <i class="fa fa-phone"></i>
+               <p>+65 6123 4567</p>
+            </div>
 
-</footer>
+            <div>
+               <i class="fa fa-envelope"></i>
+               <p><a href="mailto:swapnil@jessie.com">swapnil@jessie.com</a></p>
+            </div>
 
+         </div>
+
+         <div class="footer-right">
+
+            <p class="footer-company-about">
+               <span>About the company</span>
+               Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+            </p>
+
+            
+
+         </div>
+
+      </footer>

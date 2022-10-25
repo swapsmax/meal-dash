@@ -4,6 +4,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 .title {
     font-size: 32px;
     color: black;
@@ -18,7 +20,7 @@
     position: sticky;
     top:0; left:0; right:0;
     z-index: 1000;
-    background-color: white;
+    background-color: #D3EEDC;
     padding: 20px 20px 20px 20px;
     border-radius: 25px;
 }
@@ -33,20 +35,20 @@
 
 .navbar a {
     font-size: 18px;
-    color: black;
+    font-weight: bolder;
+    color: #4FAE5A;
     margin: 0 22px;
     text-decoration: underline solid transparent;
     transition: 0.2s linear;
 }
 
 .navbar a:hover {
-    color: #AF005F;
+    color: black;
     text-decoration: solid transparent;
-    text
 }
 
 .icons {
-    
+    filter: invert(59%) sepia(18%) saturate(1277%) hue-rotate(76deg) brightness(97%) contrast(85%);
 }
 
 .icons span {
@@ -109,7 +111,7 @@
     padding: 12px 28px;
     cursor: pointer;
     text-transform: capitalize;
-    background-color: #221177;
+    background-color: #4FAE5A;
     color: white;
     text-decoration: underline solid transparent;
     transition: 0.2s linear;
@@ -117,8 +119,8 @@
 }
 
 .slide .content .btn:hover {
-    background-color: #AF005F;
-    color: white;
+    background-color: #D3EEDC;
+    color: #4FAE5A;
     text-decoration: underline solid transparent;
 }
 
@@ -153,7 +155,11 @@
 /* categories */
 
 .category {
-    margin: 80px 40px 40px 40px;
+    background-color: #EBEFF2;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 40px;
+    padding-bottom: 60px;
 }
 
 .category .container {
@@ -165,7 +171,7 @@
 }
 
 .category .container .box {
-    background-color: #221177;
+    background-color: #D3EEDC;
     padding: 23px 0 0 0;
     margin: 12px;
     text-align: center;
@@ -177,27 +183,27 @@
     width: 100%;
     height: 100px;
     object-fit: contain;
-    filter: invert(1);
+    filter: invert(55%) sepia(45%) saturate(491%) hue-rotate(76deg) brightness(97%) contrast(96%);
 }
 
 .category .container .box h3{
     margin-top: 8px;
-    color: white;
-    text-decoration: underline #221177;
+    color: #4FAE5A;
+    text-decoration: underline #D3EEDC;
     transition: 0.2s linear;
  }
  
 .category .container .box:hover{
-    background-color: #AF005F;
+    background-color: #4FAE5A;
  }
  
 .category .container .box:hover img{
-    filter: invert(1);
+    filter: invert(91%) sepia(8%) saturate(431%) hue-rotate(87deg) brightness(101%) contrast(94%);
  }
  
 .category .container .box:hover h3{
     color: white;
-    text-decoration: underline #AF005F;
+    text-decoration: underline #4FAE5A;
  }
 
 .latest-items .more-btn {
@@ -210,7 +216,7 @@
     padding: 10px 16px;
     cursor: pointer;
     text-transform: capitalize;
-    background-color: #221177;
+    background-color: #4FAE5A;
     color: white;
     text-decoration: underline solid transparent;
     transition: 0.2s linear;
@@ -218,64 +224,192 @@
  }
 
 .latest-items .more-btn .btn:hover {
-    background-color: #AF005F;
-    color: white;
+    background-color: #D3EEDC;
+    color: #4FAE5A;
     text-decoration: underline solid transparent;
  }
 
 
  /* footer styles */
 
-.footer .grid{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-   gap:1.5rem;
-   align-items: flex-start;
+.footer-distributed{
+  background: #373A44;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
 }
 
-.footer .grid .box{
-   border:black;
-   padding:2rem;
-   text-align: center;
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
 }
 
-.footer .grid .box img{
-   height: 4rem;
-   width: 100%;
-   object-fit: contain;
-   margin-bottom: .5rem;
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
 }
 
-.footer .grid .box h3{
-   margin:1rem 0;
-   font-size: 1rem;
-   color:black;
-   text-transform: capitalize;
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
 }
 
-.footer .grid .box p,
-.footer .grid .box a{
-   display: block;
-   font-size: 1rem;
-   color: black;
-   line-height: 1.8;
-   text-decoration: underline solid transparent;
+.footer-distributed h3 span{
+  color:  #4FAE5A;
 }
 
-.footer .grid .box a:hover{
-   text-decoration: underline;
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
 }
 
-.credit{
-   padding:3rem 2rem;
-   text-align: center;
-   background-color: black;
-   color: white;
-   font-size: 1rem;
-   text-transform: capitalize;
-   /* padding-bottom: 10rem; */
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
 }
 
-.credit span{
-   color: yellow;
+.footer-distributed .footer-company-name{
+  color:  white;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  #4FAE5A;
+  text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
 }
