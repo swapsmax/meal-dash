@@ -43,12 +43,16 @@
 }
 
 .navbar a:hover {
-    color: black;
+    color: #2A6144;
     text-decoration: solid transparent;
 }
 
 .icons {
     filter: invert(59%) sepia(18%) saturate(1277%) hue-rotate(76deg) brightness(97%) contrast(85%);
+}
+
+.icons a:hover {
+    filter: invert(32%) sepia(35%) saturate(541%) hue-rotate(96deg) brightness(93%) contrast(98%);
 }
 
 .icons span {
@@ -155,11 +159,12 @@
 /* categories */
 
 .category {
-    background-color: #EBEFF2;
+    background-color: #2A6144;
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 40px;
     padding-bottom: 60px;
+    border-radius: 25px;
 }
 
 .category .container {
@@ -240,6 +245,7 @@
   text-align: left;
   font: bold 16px sans-serif;
   padding: 55px 50px;
+  border-radius: 25px;
 }
 
 .footer-distributed .footer-left,

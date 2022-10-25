@@ -55,7 +55,7 @@
 	</div>
 
 	<div class="category">
-		<h1 class="title" style="text-decoration: underline solid transparent;"><b>Categories</b></h1>
+		<h1 class="title" style="text-decoration: underline solid transparent; color: white;"><b>Categories</b></h1>
 		<div class="container">
 
 			<a href="category.php?category=sides" class="box">
