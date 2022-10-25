@@ -19,8 +19,8 @@
     top:0; left:0; right:0;
     z-index: 1000;
     background-color: white;
-    border-bottom: 1.5px solid black;
-    padding: 30px 30px 30px 30px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 25px;
 }
 
 .nav {
@@ -40,12 +40,18 @@
 }
 
 .navbar a:hover {
-    color: #FFB900;
-    text-decoration: underline;
+    color: #AF005F;
+    text-decoration: solid transparent;
+    text
+}
+
+.icons {
+    
 }
 
 .icons span {
     margin-left: 10px;
+
 }
 
 
