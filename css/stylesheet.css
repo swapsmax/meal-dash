@@ -103,15 +103,17 @@
     padding: 12px 28px;
     cursor: pointer;
     text-transform: capitalize;
-    background-color: #FFB900;
-    color: black;
+    background-color: #221177;
+    color: white;
     text-decoration: underline solid transparent;
     transition: 0.2s linear;
+    border-radius: 25px;
 }
 
 .slide .content .btn:hover {
-    text-decoration: underline solid black;
-    background-color: white;
+    background-color: #AF005F;
+    color: white;
+    text-decoration: underline solid transparent;
 }
 
 .dot {
@@ -157,28 +159,30 @@
 }
 
 .category .container .box {
-    border: 1.5px solid black;
+    background-color: #221177;
     padding: 23px 0 0 0;
     margin: 12px;
     text-align: center;
     transition: 0.2s linear;
+    border-radius: 25px;
 }
 
 .category .container .box img {
     width: 100%;
     height: 100px;
     object-fit: contain;
+    filter: invert(1);
 }
 
 .category .container .box h3{
     margin-top: 8px;
-    color: black;
-    text-decoration: underline solid white;
+    color: white;
+    text-decoration: underline #221177;
     transition: 0.2s linear;
  }
  
 .category .container .box:hover{
-    background-color: black;
+    background-color: #AF005F;
  }
  
 .category .container .box:hover img{
@@ -187,7 +191,7 @@
  
 .category .container .box:hover h3{
     color: white;
-    text-decoration: underline solid black;
+    text-decoration: underline #AF005F;
  }
 
 .latest-items .more-btn {
@@ -195,53 +199,77 @@
  }
 
 .latest-items .more-btn .btn {
-    margin-top: 16px;
+    margin-top: 20px;
     font-size: 16px;
-    padding: 8px 16px;
+    padding: 10px 16px;
     cursor: pointer;
     text-transform: capitalize;
-    background-color: #FFB900;
-    color: black;
+    background-color: #221177;
+    color: white;
     text-decoration: underline solid transparent;
     transition: 0.2s linear;
+    border-radius: 25px;
  }
 
 .latest-items .more-btn .btn:hover {
-    text-decoration: underline solid black;
-    background-color: white;
+    background-color: #AF005F;
+    color: white;
+    text-decoration: underline solid transparent;
  }
 
 
  /* footer styles */
 
-.footer {
-    margin: 80px 40px 40px 40px;
+.footer .grid{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+   gap:1.5rem;
+   align-items: flex-start;
 }
 
-.footer .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    align-items: flex;
-    max-width: 80%;
-    margin: auto;
-    padding-top: 60px;
- }
+.footer .grid .box{
+   border:black;
+   padding:2rem;
+   text-align: center;
+}
 
-.footer .container .box {
-    border: 1.5px solid black;
-    padding: 23px 0 0 0;
-    margin: 12px;
-    text-align: center;
- }
+.footer .grid .box img{
+   height: 4rem;
+   width: 100%;
+   object-fit: contain;
+   margin-bottom: .5rem;
+}
 
-.footer .container .box img {
-    width: 100%;
-    height: 50px;
-    object-fit: contain;
- }
+.footer .grid .box h3{
+   margin:1rem 0;
+   font-size: 1rem;
+   color:black;
+   text-transform: capitalize;
+}
 
-.footer .container .box h3 {
-    margin: 8px 0;
-    font-size: 16px;
-    color: black;
- }
+.footer .grid .box p,
+.footer .grid .box a{
+   display: block;
+   font-size: 1rem;
+   color: black;
+   line-height: 1.8;
+   text-decoration: underline solid transparent;
+}
+
+.footer .grid .box a:hover{
+   text-decoration: underline;
+}
+
+.credit{
+   padding:3rem 2rem;
+   text-align: center;
+   background-color: black;
+   color: white;
+   font-size: 1rem;
+   text-transform: capitalize;
+   /* padding-bottom: 10rem; */
+}
+
+.credit span{
+   color: yellow;
+}

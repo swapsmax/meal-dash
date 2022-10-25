@@ -99,7 +99,7 @@
 </body>
 
 <footer>
-	<!-- <?php include 'components/footer.php'; ?> -->
+	 <br><br><?php include 'components/footer.php'; ?> 
 </footer>
 
 </html>
