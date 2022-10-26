@@ -1,9 +1,9 @@
 <?php
 
-$conn = mysqli_connect('localhost', 'root', '', 'mealdash');
+$db_name = 'mysql:host=localhost;dbname=mealdash';
+$user_name = 'root';
+$user_password = '';
 
-if(!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+$conn = new PDO($db_name, $user_name, $user_password);
 
 ?>
