@@ -397,7 +397,7 @@
   margin-bottom: 5px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+/* media queries for responsiveness */
 
 @media (max-width: 880px) {
 
@@ -418,4 +418,49 @@
     margin-left: 0;
   }
 
+}
+
+
+/* login form */
+
+.form-container{
+    display: flex;
+    align-items: center;
+}
+
+.form-container form{
+   border:var(--border);
+   margin:0 auto;
+   max-width: 50rem;
+   padding:2rem;
+   text-align: center;
+}
+
+.form-container form h3{
+   font-size: 2.5rem;
+   color: black;
+   text-transform: uppercase;
+   margin-bottom: 1rem;
+}
+
+.form-container form .box{
+   margin:.7rem 0;
+   width: 100%;
+   padding:1.4rem;
+   font-size: 1.8rem;
+   color: black;
+}
+
+.form-container form p{
+   margin-top: 1.5rem;
+   font-size: 2rem;
+   color:yellow;
+}
+
+.form-container form p a{
+   color:black;
+}
+
+.form-container form p a:hover{
+   text-decoration: underline;
 }
