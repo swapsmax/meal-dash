@@ -22,11 +22,12 @@
 <div class="form-container">
 
    <form action="" method="post">
-      <h3>login now</h3>
-      <input type="email" name="email" required placeholder="enter your email" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
-      <input type="password" name="pass" required placeholder="enter your password" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
-      <input type="submit" value="login now" name="submit" class="btn">
-      <p>don't have an account? <a href="register.php">register now</a></p>
+      <h3>Login and order something delicious!</h3>
+      <input type="email" name="email" required placeholder="Email" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="password" name="pass" required placeholder="Password" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="submit" value="LOGIN" name="submit" class="btn">
+      
+      <p><br>Don't have an account? <br><a href="register.php" style="color: #4FAE5A; font-weight: bolder;">Register Now!</a></p>
    </form>
 
 </div>
