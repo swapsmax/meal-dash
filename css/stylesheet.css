@@ -4,8 +4,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-
 .title {
     font-size: 32px;
     color: black;
@@ -38,6 +36,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    max-height: 30px;
 }
 
 .navbar a {
@@ -542,7 +541,7 @@
   margin-bottom: 5px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+/* media queries for responsiveness */
 
 @media (max-width: 880px) {
 
@@ -563,4 +562,245 @@
     margin-left: 0;
   }
 
+}
+
+
+/* login form */
+
+.form-container{
+    display: flex;
+    align-items: center;
+}
+
+.form-container form{
+   margin:0 auto;
+   max-width: 40rem;
+   padding:2rem;
+   text-align: center;
+}
+
+.form-container form h3{
+   font-size: 2rem;
+   color: #4FAE5A;
+   margin-bottom: 2rem;
+}
+
+.form-container form .box{
+   margin:.7rem 0;
+   width: 70%;
+   padding:1rem;
+   font-size: 1rem;
+   background-color: lightgrey;
+   border-radius: 25px;
+   border-color: lightgrey;
+}
+
+.form-container form .btn{
+   margin:.7rem 0;
+   width: 30%;
+   padding:0.5rem;
+   font-size: 1rem;
+   background-color: #4FAE5A;
+   border-radius: 25px;
+   border-color: #4FAE5A;
+   color: white;
+   transition: 0.2s linear;
+}
+
+.form-container form .btn:hover{
+   margin:.7rem 0;
+   width: 30%;
+   padding:0.5rem;
+   font-size: 1rem;
+   background-color: #2A6144;
+   border-radius: 25px;
+   border-color: #4FAE5A;
+   color: white;
+}
+
+.form-container form p{
+   margin-top: 1.5rem;
+   font-size: 1rem;
+   color:black;
+}
+
+.form-container form p a{
+   color:black;
+}
+
+.form-container form p a:hover{
+   text-decoration: underline;
+}
+
+/* about page */
+
+
+.about .row{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap:1.5rem;
+}
+
+.about .row .image{
+   flex:1 1 40rem;
+}
+
+.about .row .image img{
+   height: 400px; 
+   width: 100%;
+}
+
+.about .row .content{
+   text-align: center;
+   padding-right: 200px;
+   padding-left: 200px;
+}
+
+.about .row .content h3{
+   font-size: 2rem;
+   font-weight: bolder;
+   color:#4FAE5A;
+   text-transform: capitalize;
+   margin-bottom: 1rem;
+
+}
+
+.about .row .content p{
+   padding:1rem 0;
+   line-height: 2;
+   font-size: 1rem;
+   color:black;
+}
+
+.about .row .btn {
+    margin-top: 16px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 12px 28px;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-color: #4FAE5A;
+    color: white;
+    text-decoration: underline solid transparent;
+    transition: 0.2s linear;
+    border-radius: 25px;
+}
+
+.about .row .btn:hover {
+    background-color: #D3EEDC;
+    color: #4FAE5A;
+    text-decoration: underline solid transparent;
+}
+
+
+.steps .title{
+    text-decoration: underline solid transparent;
+    color: #4FAE5A;
+}
+
+.steps .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+   gap:1rem;
+   align-items: flex-start;
+   padding-right: 200px;
+   padding-left: 200px;
+}
+
+.steps .box-container .box{
+   text-align: center;
+   border:.2rem solid 4FAE5A;
+   padding:1rem;
+}
+
+.steps .box-container .box img{
+   width: 20%;
+   object-fit: contain;
+   margin-bottom: 0rem;
+   filter: invert(57%) sepia(23%) saturate(922%) hue-rotate(76deg) brightness(97%) contrast(95%);
+}
+
+.steps .box-container .box h3{
+   font-size: 1.5rem;
+   margin:1rem 0;
+   color:#4FAE5A;
+   text-transform: capitalize;
+}
+
+.steps .box-container .box p{
+   line-height: 2;
+   font-size: 1rem;
+   color:black;
+}
+
+.contact .row{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap:1 rem;
+}
+
+
+.testimonials{
+  padding: 40px 0;
+  color: #434343;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.testimonials h1{
+    color: #4FAE5A;
+}
+
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial{
+  background: #fff;
+  padding: 30px;
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.stars{
+  color: #6ab04c;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
 }
