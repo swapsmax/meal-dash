@@ -260,6 +260,7 @@
    transition: .2s linear;
    text-align: center;
    border-radius: 25px;
+   text-decoration: none;
 }
 
 .products .container .box .fa-eye:hover,
@@ -354,17 +355,16 @@
     text-decoration: underline solid transparent;
  }
 
- .products .container .add-to-cart {
+.products .container .add-to-cart {
   text-align: center;
  }
 
- .products .container .add-to-cart .add-btn {
+.products .container .add-to-cart .add-btn {
     border: none;
     margin-top: 20px;
     font-size: 16px;
     padding: 5px 16px;
     cursor: pointer;
-    /* text-transform: capitalize; */
     background-color: #4FAE5A;
     color: white;
     text-decoration: underline solid transparent;
@@ -374,10 +374,65 @@
     width: 100%;
  }
 
- .products .container .add-to-cart .add-btn:hover {
+.products .container .add-to-cart .add-btn:hover {
     background-color:#D3EEDC;
     color:#4FAE5A;
  }
+
+
+ /* menu */
+
+ .heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 12px; */
+  flex-flow: column;
+  background-image: url('../images/menu_banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  min-height: 100px;
+  margin-bottom: 60px;
+}
+
+.heading .menu-desc {
+  font-size: 16px;
+  max-width: 40%;
+  text-align: center;
+  color: white;
+}
+.heading h1 {
+  font-size: 18px;
+  color: white;
+  padding: 40px 0 0 0;
+}
+  
+.heading h3{
+  font-size: 60px;
+  color: #D3EEDC;
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
+
+.heading .path {
+  /* background-color: #4FAE5A; */
+  border-color: 1.5px solid #D3EEDC;
+  font-size: 16px;
+  color: #D3EEDC;
+  padding: 10px 20px 10px 20px;
+  border-radius: 25px;
+}
+
+.heading .path a{
+  color: grey;
+  text-decoration: none;
+}
+
+.heading p a:hover{
+  text-decoration: underline;
+  color: white;
+}
 
  /* footer styles */
 
