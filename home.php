@@ -86,7 +86,7 @@
 	</div>
 
 	<!-- latest products -->
-	<div class="latest-items">
+	<div class="products">
 		<h1 class="title" style="text-decoration: underline solid transparent;">
 		<b>Latest Dishes</b></h1>
 		
