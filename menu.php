@@ -41,7 +41,7 @@ include 'components/add_cart.php';
 			incididunt ut labore et dolore magna aliqua. In hendrerit gravida rutrum quisque non tellus.</p>
         <p class="path">
 			<a href="home.php">Home</a>
-			<span> / Menu</span>
+			<span> > Menu</span>
 		</p>
     </div>
     
