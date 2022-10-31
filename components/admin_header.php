@@ -2,7 +2,7 @@
 
    <section class="flex">
 
-      <a href="dashboardfix.php" class="logo">Admin Panel</a>
+      <a href="dashboard.php" class="logo">Admin Panel</a>
 
       <nav class="navbar">
          <a href="dashboard.php">Home</a>
