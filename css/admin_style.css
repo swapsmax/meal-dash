@@ -251,7 +251,6 @@ section{
    top:125%; right:2rem;
    background-color: var(--white);
    box-shadow: var(--box-shadow);
-    
    border-radius: .5rem;
    padding:2rem;
    padding-top: 1rem;
@@ -270,7 +269,7 @@ section{
    margin-bottom: 1rem;
    font-size: 2rem;
    text-align: center;
-   color:var(--black);
+   color:black;
 }
 
 .header .flex .profile.active{
