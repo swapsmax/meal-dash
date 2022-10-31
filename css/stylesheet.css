@@ -334,10 +334,11 @@
 
 .products .more-btn {
     text-align: center;
+    padding: 60px 0 20px 0;
  }
 
 .products .more-btn .btn {
-    margin-top: 20px;
+    margin : auto;
     font-size: 16px;
     padding: 10px 16px;
     cursor: pointer;
@@ -398,6 +399,8 @@
     background-color:#D3EEDC;
     color:#4FAE5A;
  }
+
+
 
 
  /* menu */
@@ -511,6 +514,7 @@
   width: 40px;
   cursor: pointer;
   font-size: 2rem;
+
   border-radius: 25px;
   transition: .2s linear;
 }
@@ -519,6 +523,7 @@
   background-color: #ffe6eb;
   color: #f26161;
   border: solid 1.5px #f26161;
+
 }
 
 .products .container .box .sub-total{
