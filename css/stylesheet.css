@@ -802,26 +802,24 @@
 }
 
 .form-container form .btn{
-   margin:.7rem 0;
-   width: 30%;
-   padding:0.5rem;
-   font-size: 1rem;
+  margin-top: 10px;
+   margin-bottom: 20px;
+   display: inline-block;
+   font-size: 20px;
+   padding: 12px 28px;
+   cursor: pointer;
+   text-transform: capitalize;
    background-color: #4FAE5A;
-   border-radius: 25px;
-   border-color: #4FAE5A;
    color: white;
+   text-decoration: underline solid transparent;
    transition: 0.2s linear;
+   border-radius: 25px;
 }
 
 .form-container form .btn:hover{
-   margin:.7rem 0;
-   width: 30%;
-   padding:0.5rem;
-   font-size: 1rem;
-   background-color: #2A6144;
-   border-radius: 25px;
-   border-color: #4FAE5A;
-   color: white;
+  background-color: #D3EEDC;
+   color: #4FAE5A;
+   text-decoration: underline solid transparent;
 }
 
 .form-container form p{
