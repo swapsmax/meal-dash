@@ -507,8 +507,8 @@
   position: absolute;
   top:1rem; left:1rem;
   background-color: lightpink;
-  color: black;
-  border: solid 1.5px black;
+  color: maroon;
+  border: solid 0px maroon;
   line-height:20px;
   height: 40px;
   width: 40px;
@@ -522,13 +522,13 @@
 .products .container .box .fa-times:hover{
   background-color: #ffe6eb;
   color: #f26161;
-  border: solid 1.5px #f26161;
+  border: solid 0px #f26161;
 
 }
 
 .products .container .box .sub-total{
   margin-top: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color:var(--light-color);
 }
 
@@ -569,6 +569,12 @@
   text-decoration: underline solid transparent;
   transition: 0.2s linear;
   border-radius: 25px;
+}
+
+.products .cart-total .btn:hover{
+    background-color: #D3EEDC;
+    color: #4FAE5A;
+    text-decoration: underline solid transparent;
 }
 
 .products .more-btn .continue-btn {
@@ -1140,4 +1146,71 @@
 .quick-view form .cart-btn:hover{
   background-color: black;
   color:white;
+}
+
+
+/* contact page */
+
+
+.contact .row{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap:1.5rem;
+}
+
+.contact .row .image{
+   flex:1 1 40rem;
+}
+
+.contact .row .image img{
+   width: 100%;
+}
+
+.contact .row form{
+   border:var(--border);
+   flex:1 1 40rem;
+   padding:1.5rem;
+   text-align: center;
+}
+
+.contact .row form h3{
+   font-size: 1.5rem;
+   color:var(--black);
+   margin-bottom: 1rem;
+   text-transform: capitalize;
+}
+
+.contact .row form .box{
+   margin:.7rem 0;
+   font-size: 1rem;
+   color:var(--black);
+   border:var(--border);
+   padding:.4rem;
+   width: 100%;
+}
+
+.contact .row form textarea{
+   height: 8rem;
+   resize: none;
+}
+
+.contact .row .btn {
+    margin-top: 16px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 12px 28px;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-color: #F1C40F;
+    color: white;
+    text-decoration: underline solid transparent;
+    transition: 0.2s linear;
+    border-radius: 25px;
+}
+
+.contact .row .btn:hover {
+    background-color: #C19D0C;
+    color: white;
+    text-decoration: underline solid transparent;
 }
