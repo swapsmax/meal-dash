@@ -1,3 +1,17 @@
+<?php
+
+include '../components/connect.php';
+
+session_start();
+
+if(isset($_SESSION['admin_id'])){
+   $admin_id = $_SESSION['admin_id'];
+}else{
+   $admin_id = '';
+};
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

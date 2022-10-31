@@ -2,7 +2,7 @@
 
    <section class="flex">
 
-      <a href="dashboard.php" class="logo">Admin Panel</a>
+      <a href="dashboardfix.php" class="logo">Admin Panel</a>
 
       <nav class="navbar">
          <a href="dashboard.php">Home</a>
@@ -20,6 +20,7 @@
 
       <div class="profile">
          <?php
+            $admin_id = $_GET['admin_id'];
             $select_profile = $conn->prepare("SELECT * FROM `admin` WHERE id = ?");
             $select_profile->execute([$admin_id]);
             $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
