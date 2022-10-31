@@ -334,10 +334,11 @@
 
 .products .more-btn {
     text-align: center;
+    padding: 60px 0 20px 0;
  }
 
 .products .more-btn .btn {
-    margin-top: 20px;
+    margin : auto;
     font-size: 16px;
     padding: 10px 16px;
     cursor: pointer;
@@ -378,6 +379,8 @@
     background-color:#D3EEDC;
     color:#4FAE5A;
  }
+
+
 
 
  /* menu */
@@ -434,6 +437,105 @@
   text-decoration: underline;
   color: white;
 }
+
+
+
+
+/* cart */
+
+.cart-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap:1rem; */
+  flex-flow: column;
+  background-color: var(--black);
+  min-height: 20rem;
+}
+
+.cart-heading h3 {
+  font-size: 30px;
+  /* color:var(--white); */
+  text-transform: capitalize;
+  margin: 0;
+  padding: 10px 0 10px 0;
+}
+
+.cart-heading p {
+  font-size: 16px;
+  color:var(--light-color);
+  margin: 0;
+}
+
+
+.products .container .box .flex .fa-edit{
+  width: 20px;
+  background-color: var(--yellow);
+  color:var(--black);
+  cursor: pointer;
+  font-size: 20px;
+  height: 20px;
+  border:var(--border);
+}
+
+.products .container .box .flex .fa-edit:hover{
+  background-color: var(--black);
+  color:var(--white);
+}
+
+.products .container .box .fa-times{
+  position: absolute;
+  top:1rem; left:1rem;
+  /* background-color: red; */
+  color: black;
+  border: solid 1.5px black;
+  line-height:20px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.products .container .box .fa-times:hover{
+  background-color: black;
+  color:white;
+}
+
+.products .container .box .sub-total{
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  color:var(--light-color);
+}
+
+.products .container .box .sub-total span{
+  color:var(--red);
+}
+
+.products .cart-total{
+  display: flex;
+  align-items: center;
+  gap:1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3rem;
+  border:var(--border);
+  padding:1rem;
+}
+
+.products .cart-total p{
+  font-size: 2.5rem;
+  color:var(--light-color);
+}
+
+.products .cart-total p span{
+  color:var(--red);
+}
+
+.products .cart-total .btn{
+  margin-top: 0;
+}
+
+
 
  /* footer styles */
 
