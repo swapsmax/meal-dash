@@ -356,6 +356,26 @@
     text-decoration: underline solid transparent;
  }
 
+.products .more-btn .delete-btn {
+  margin: 20px 0 20px 0;
+  /* display: inline-block; */
+  font-size: 14px;
+  padding:6px 16px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: .2s linear;
+  background-color: lightpink;
+  color: black;
+  border-radius: 25px;
+  border-color: transparent;
+  transition: .2s linear;
+}
+
+.products .more-btn .delete-btn:hover {
+  background-color: #ffe6eb;
+  color: #f26161;
+}
+
 .products .container .add-to-cart {
   text-align: center;
  }
@@ -486,7 +506,7 @@
 .products .container .box .fa-times{
   position: absolute;
   top:1rem; left:1rem;
-  /* background-color: red; */
+  background-color: lightpink;
   color: black;
   border: solid 1.5px black;
   line-height:20px;
@@ -494,11 +514,16 @@
   width: 40px;
   cursor: pointer;
   font-size: 2rem;
+
+  border-radius: 25px;
+  transition: .2s linear;
 }
 
 .products .container .box .fa-times:hover{
-  background-color: black;
-  color:white;
+  background-color: #ffe6eb;
+  color: #f26161;
+  border: solid 1.5px #f26161;
+
 }
 
 .products .container .box .sub-total{
@@ -514,27 +539,50 @@
 .products .cart-total{
   display: flex;
   align-items: center;
-  gap:1.5rem;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 3rem;
-  border:var(--border);
-  padding:1rem;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* margin-left:30%;
+  margin-right: 35%; */
+  flex-flow: column;
+  /* border: solid 1.5px black; */
+  /* padding:1rem; */
 }
 
 .products .cart-total p{
-  font-size: 2.5rem;
-  color:var(--light-color);
+  font-size: 25px;
+  color: black;
 }
 
 .products .cart-total p span{
-  color:var(--red);
+  color: #4FAE5A;
 }
 
-.products .cart-total .btn{
-  margin-top: 0;
+.products .cart-total .btn {
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: capitalize;
+  background-color: #4FAE5A;
+  color: white;
+  text-decoration: underline solid transparent;
+  transition: 0.2s linear;
+  border-radius: 25px;
 }
 
+.products .more-btn .continue-btn {
+  font-size: 16px;
+  color: #4FAE5A;
+  text-decoration: none;
+  transition: .2s linear;
+  /* text-decoration: solid 1px transparent; */
+}
+
+.products .more-btn .continue-btn:hover {
+  color: #2A6144;
+  /* text-decoration: underline 1.5px solid; */
+}
 
 
  /* footer styles */
