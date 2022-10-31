@@ -24,6 +24,14 @@ CREATE TABLE users (
   password varchar(50) NOT NULL,
   address varchar(500) NOT NULL
 );
+INSERT INTO users (id, name, email, number, password, address) VALUES (
+  1,
+  'user1',
+  'jessie.heihei@gmail',
+  '123',
+  '123',
+  '123'
+);
 
 CREATE TABLE products (
   id INT(100) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
