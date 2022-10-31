@@ -802,28 +802,26 @@
 }
 
 .form-container form .btn{
-   margin:.7rem 0;
-   width: 30%;
-   padding:0.5rem;
-   font-size: 1rem;
-   background-color: #4FAE5A;
-   border-radius: 25px;
-   border-color: #4FAE5A;
-   color: white;
-   transition: 0.2s linear;
-}
-
-.form-container form .btn:hover{
-   margin:.7rem 0;
-   width: 30%;
-   padding:0.5rem;
-   font-size: 1rem;
-   background-color: #2A6144;
-   border-radius: 25px;
-   border-color: #4FAE5A;
-   color: white;
-}
-
+    margin-top: 10px;
+     margin-bottom: 20px;
+     display: inline-block;
+     font-size: 20px;
+     padding: 12px 28px;
+     cursor: pointer;
+     text-transform: capitalize;
+     background-color: #4FAE5A;
+     color: white;
+     text-decoration: underline solid transparent;
+     transition: 0.2s linear;
+     border-radius: 25px;
+ }
+ 
+ .form-container form .btn:hover{
+    background-color: #D3EEDC;
+     color: #4FAE5A;
+     text-decoration: underline solid transparent;
+ }
+ 
 .form-container form p{
    margin-top: 1.5rem;
    font-size: 1rem;
@@ -1009,4 +1007,137 @@
   flex: 100%;
   max-width: 100%;
 }
+}
+
+/* profile page */
+
+
+.user-details .user{
+  max-width: 50rem;
+  margin:0 auto;
+  border:black;
+  padding:2rem;
+}
+
+.user-details .user img{
+  width: 100%;
+  height: 7rem;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  filter: invert(57%) sepia(23%) saturate(922%) hue-rotate(76deg) brightness(97%) contrast(95%);
+}
+
+.user-details .user p{
+  padding:1rem 0;
+  line-height: 1;
+  font-size: 1.2rem;
+}
+
+.user-details .user p span{
+  color:black;
+}
+
+.user-details .user p i{
+  margin-right: 2rem;
+  color:#50AD5A;
+}
+
+.user-details .user .address{
+  margin-top: 1rem;
+}
+
+.user-details .user .btn {
+   margin-top: 10px;
+   margin-bottom: 20px;
+   display: inline-block;
+   font-size: 20px;
+   padding: 12px 28px;
+   cursor: pointer;
+   text-transform: capitalize;
+   background-color: #4FAE5A;
+   color: white;
+   text-decoration: underline solid transparent;
+   transition: 0.2s linear;
+   border-radius: 25px;
+}
+
+.user-details .user .btn:hover {
+   background-color: #D3EEDC;
+   color: #4FAE5A;
+   text-decoration: underline solid transparent;
+}
+
+/* quick view page */
+
+.quick-view form{
+  max-width: 40rem;
+  padding:2rem;
+  border:black;
+  position: relative;
+  margin:0 auto;
+}
+
+.quick-view form img{
+  height: 25rem;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.quick-view form .cat{
+  font-size: 1.8rem;
+  color:black;
+}
+
+.quick-view form .cat:hover{
+  color:black;
+  text-decoration: underline;
+}
+
+.quick-view form .name{
+  font-size: 2rem;
+  margin:.5rem 0;
+}
+
+.quick-view form .flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:1.5rem;
+  margin:1rem 0;
+}
+
+.quick-view form .flex .price{
+  font-size: 2.5rem;
+  color:var(--black);
+}
+
+.quick-view form .flex .price span{
+  font-size: 2rem;
+  color:black;
+}
+
+.quick-view form .flex .qty{
+  border:black;
+  padding:1rem;
+  font-size: 1.8rem;
+  color:black;
+}
+
+.quick-view form .cart-btn{
+  width: 100%;
+  padding:1rem 3rem;
+  text-align: center;
+  border:black;
+  font-size: 2rem;
+  color:black;
+  cursor: pointer;
+  text-transform: capitalize;
+  background: none;
+  margin-top: 1rem;
+}
+
+.quick-view form .cart-btn:hover{
+  background-color: black;
+  color:white;
 }
