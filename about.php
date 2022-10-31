@@ -30,7 +30,7 @@
       <div class="content">
          <h3 style=""><br><br>Why Choose Us?</h3>
          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, neque debitis incidunt qui ipsum sed doloremque a molestiae in veritatis ullam similique sunt aliquam dolores dolore? Quasi atque debitis nobis!<br></p>
-         <a href="menu.php" class="btn">Our Menu</a>
+         <a href="menu.html" class="btn">Our Menu</a>
       </div>
 
    </div>

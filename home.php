@@ -1,6 +1,3 @@
-<!-- database connection -->
-<?php include 'components/connect.php'; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +11,6 @@
 
 	<?php include 'components/nav_header.php'; ?>
 
-	<!-- carousel  -->
 	<div class="carousel">
 
 		<div class="slide fade">
@@ -50,7 +46,7 @@
 			</div>
 		</div>
 	</div>
-	<br> 
+	<br>
 	<!-- carousell dots -->
 	<div style="text-align:center">
 		<span class="dot"></span> 
@@ -58,7 +54,6 @@
 		<span class="dot"></span> 
 	</div>
 
-	<!-- category buttons -->
 	<div class="category">
 		<h1 class="title" style="text-decoration: underline solid transparent; color: white;"><b>Categories</b></h1>
 		<div class="container">
@@ -85,45 +80,15 @@
 		</div>
 	</div>
 
-	<!-- latest products -->
-	<div class="products">
-		<h1 class="title" style="text-decoration: underline solid transparent;">
-		<b>Latest Dishes</b></h1>
+	<div class="latest-items">
+		<h1 class="title" style="text-decoration: underline solid transparent;"><b>Latest Dishes</b></h1>
 		
 		<div class="container">
-			<!-- php to view 6 latest products from database -->
-			<?php
-				$select_products = $conn->prepare("SELECT * FROM `products` LIMIT 6");
-				$select_products->execute();
-				if($select_products->rowCount() > 0){
-					while($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)){
-			?>
-			<form action="" method="post" class="box">
-				<input type="hidden" name="pid" value="<?= $fetch_products['id']; ?>">
-				<input type="hidden" name="name" value="<?= $fetch_products['name']; ?>">
-				<input type="hidden" name="price" value="<?= $fetch_products['price']; ?>">
-				<input type="hidden" name="image" value="<?= $fetch_products['image']; ?>">
-				<a href="quick_view.php?pid=<?= $fetch_products['id']; ?>" class="fas fa-eye"></a>
-				<!-- <button type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button> -->
-				<img src="uploaded_img/<?= $fetch_products['image']; ?>" alt="">
-				<div class="name"><?= $fetch_products['name']; ?></div>
-				<a href="category.php?category=<?= $fetch_products['category']; ?>" class="cat"><?= $fetch_products['category']; ?></a>
-				<div class="flex">
-					<div class="price"><span>$</span><?= $fetch_products['price']; ?></div>
-					<input type="number" name="qty" class="qty" min="1" max="99" value="1" maxlength="2">
-				</div>
-				<div class="add-to-cart">
-					<button type="submit" class="add-btn" name="add_to_cart">Add to Cart</button>
-				</div>
-			</form>
-			<?php
-					}
-				}else{
-					echo '<p class="empty">no products added yet!</p>';
-				}
-			?>
+			<!-- php stuff to view items from database -->
 
-			
+			<form action="" method="post" class="box">
+				<!-- php stuff to add items into cart -->
+			</form>
 		</div>
 
 		<div class="more-btn">
