@@ -39,3 +39,5 @@
    </section>
 
 </header>
+
+<script type="text/javascript" src="../js/admin_script.js"></script>
