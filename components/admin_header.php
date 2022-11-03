@@ -40,4 +40,5 @@
 
 </header>
 
+<!-- admin profile drop down script -->
 <script type="text/javascript" src="../js/admin_script.js"></script>
