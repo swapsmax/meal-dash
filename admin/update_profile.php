@@ -6,6 +6,11 @@ session_start();
 
 $admin_id = $_SESSION['admin_id'];
 
+// fetch current profile
+$select_profile = $conn->prepare("SELECT * FROM admin WHERE id = ?");
+$select_profile->execute([$admin_id]);
+$fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
+
 if(!isset($admin_id)){
    header('location:admin_login.php');
 }
@@ -18,11 +23,13 @@ if(isset($_POST['submit'])){
    if(!empty($name)){
       $select_name = $conn->prepare("SELECT * FROM `admin` WHERE name = ?");
       $select_name->execute([$name]);
-      if($select_name->rowCount() > 0){
+      if($select_name->rowCount() > 0 && $name != $fetch_profile['name']){
          $message[] = 'username already taken!';
       }else{
-         $update_name = $conn->prepare("UPDATE `admin` SET name = ? WHERE id = ?");
-         $update_name->execute([$name, $admin_id]);
+         if($name != $fetch_profile['name']) {
+            $update_name = $conn->prepare("UPDATE `admin` SET name = ? WHERE id = ?");
+            $update_name->execute([$name, $admin_id]);
+         }
       }
    }
 
@@ -53,7 +60,6 @@ if(isset($_POST['submit'])){
          }
       }
    }
-
 }
 
 ?>
@@ -76,6 +82,20 @@ if(isset($_POST['submit'])){
 <body>
 
 <?php include '../components/admin_header.php' ?>
+
+<!-- confirmation message -->
+<?php
+if(isset($message)){
+   foreach($message as $message){
+      echo '
+      <div class="message">
+         <span>'.$message.'</span>
+         <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+      </div>
+      ';
+   }
+}
+?>
 
 <!-- admin profile update section starts  -->
 
