@@ -54,7 +54,7 @@ if(isset($_POST['submit'])){
          if($new_pass != $empty_pass){
             $update_pass = $conn->prepare("UPDATE `admin` SET password = ? WHERE id = ?");
             $update_pass->execute([$confirm_pass, $admin_id]);
-            $message[] = 'password updated successfully!';
+            $message[] = 'profile updated successfully!';
          }else{
             $message[] = 'please enter a new password!';
          }
