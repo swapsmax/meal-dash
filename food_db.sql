@@ -41,13 +41,13 @@ CREATE TABLE products (
   image varchar (100)
 );
 INSERT INTO products (id, name, category, price, image) VALUES (
-  1,  'Double Cheese Burger', 'mains',  7.50, null
+  1,  'Double Cheese Burger', 'mains',  7.50, 'burger-1.png'
 );
 INSERT INTO products (id, name, category, price, image) VALUES (
-  2,  'Coke', 'drinks',  1.80, null
+  2,  'Coke', 'drinks',  1.80, 'coke.png'
 );
 INSERT INTO products (id, name, category, price, image) VALUES (
-  3,  'Hawaiian Pizza', 'mains',  15, null
+  3,  'Hawaiian Pizza', 'mains',  15, 'pizza-4.png'
 );
 
 CREATE TABLE cart (
@@ -83,9 +83,9 @@ CREATE TABLE orders (
   order_status varchar(50) NOT NULL DEFAULT 'order submitted',
   FOREIGN KEY (user_id) REFERENCES users(id)
 );
-INSERT INTO orders (id, user_id, name, number, email, method, address, total_products, total_price, placed_on) VALUES (
-  1, 1, 'user1', '123', 'user1@email.com', 'paylah', 'address1', 'total_products', 16.80, '10/10/2022'
-);
+-- INSERT INTO orders (id, user_id, name, number, email, method, address, total_products, total_price, placed_on) VALUES (
+--   1, 1, 'user1', '123', 'user1@email.com', 'paylah', 'address1', 'total_products', 16.80, 2022-10-10
+-- );
 
 CREATE TABLE messages (
   id int(100) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
