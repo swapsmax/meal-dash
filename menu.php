@@ -1,3 +1,4 @@
+<!-- database connection -->
 <?php
 
 include 'components/connect.php';
@@ -9,8 +10,6 @@ if(isset($_SESSION['user_id'])){
 }else{
    $user_id = '';
 };
-
-include 'components/add_cart.php';
 
 ?>
 

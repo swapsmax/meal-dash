@@ -1,3 +1,4 @@
+<!-- database connection -->
 <?php
 
 include 'components/connect.php';
@@ -8,9 +9,8 @@ if(isset($_SESSION['user_id'])){
    $user_id = $_SESSION['user_id'];
 }else{
    $user_id = '';
+   header('location:login.php');
 };
-
-include 'components/add_cart.php';
 
 ?>
 

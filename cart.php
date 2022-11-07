@@ -1,16 +1,16 @@
-<!-- include php database connection here -->
+<!-- database connection -->
 <?php
 
 include 'components/connect.php';
 
 session_start();
 
-// if(isset($_SESSION['user_id'])){
-//    $user_id = $_SESSION['user_id'];
-// }else{
-//    $user_id = '';
-//    header('location:home.php');
-// };
+if(isset($_SESSION['user_id'])){
+   $user_id = $_SESSION['user_id'];
+}else{
+   $user_id = '';
+   header('location:login.php');
+}
 
 if(isset($_POST['delete'])){
    $cart_id = $_POST['cart_id'];
@@ -61,12 +61,9 @@ $grand_total = 0;
         <div class="container">
 
             <?php
-            // code is altered for styling, 
-            // needs to be corrected for when user sign in can be done
-            // to view cart of another user, manually change user_id = on line 70
                 $grand_total = 0;
-                $select_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id = 1");
-                $select_cart->execute();
+                $select_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
+                $select_cart->execute([$user_id]);
                 if($select_cart->rowCount() > 0){
                     while($fetch_cart = $select_cart->fetch(PDO::FETCH_ASSOC)){
             ?>

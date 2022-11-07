@@ -42,16 +42,12 @@ if(isset($message)){
          
             <a href="profile.php" class="btn">Profile</a>
             <a href="components/user_logout.php" onclick="return confirm('Logout from this website?');" class="btn">Logout</a>
-         
-         <p class="account">
-            <a href="login.php" class="btn">Login</a>
-            <a href="register.php" class="btn">Register</a>
-         </p> 
          <?php
             }else{
          ?>
             <p class="name">Please Login First!</p>
             <a href="login.php" class="btn">Login</a>
+            <a href="register.php" class="btn">Register</a>
          <?php
           }
          ?>
