@@ -166,5 +166,5 @@
 </script>
 
 
-<!-- admin profile drop down script -->
+<!-- profile drop down script -->
 <script type="text/javascript" src="js/script.js"></script>
