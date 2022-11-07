@@ -27,7 +27,7 @@ CREATE TABLE users (
 INSERT INTO users (id, name, email, number, password, address) VALUES (
   1,
   'user1',
-  'jessie.heihei@gmail',
+  'user1@gmail.com,
   '123',
   '123',
   '123'
