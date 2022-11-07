@@ -12,6 +12,86 @@ if(isset($_SESSION['user_id'])){
    header('location:login.php');
 };
 
+if(isset($_POST['submit'])){
+
+   // fetch profile
+   $select_profile = $conn->prepare("SELECT * FROM `users` WHERE id = ?");
+   $select_profile->execute([$user_id]);
+   if($select_profile->rowCount() > 0){
+      $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
+   }
+
+   $name = $_POST['name'];
+   $name = filter_var($name, FILTER_SANITIZE_STRING);
+   $email = $_POST['email'];
+   $email = filter_var($email, FILTER_SANITIZE_STRING);
+   $number = $_POST['number'];
+   $number = filter_var($number, FILTER_SANITIZE_STRING);
+
+   
+
+   if($email != null){
+      $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ?");
+      $select_user->execute([$email]);
+      if($select_user->rowCount() > 0 && $email != $fetch_profile['email']){
+         $message[] = 'account already exists!';
+      }else{
+         if($email != $fetch_profile['email']) {
+            $update_user = $conn->prepare("UPDATE `users` SET email = ? WHERE id = ?");
+            $update_user->execute([$email, $user_id]);
+            $message[] = 'email updated successfully!';
+         }
+      }
+   }
+
+   $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ?");
+   $select_user->execute([$email]);
+
+   // update user name
+   if($name != null) {
+      $update_name = $conn->prepare("UPDATE `users` SET name = ? WHERE id = ?");
+      $update_name->execute([$name, $user_id]);
+      $message[] = 'name updated successfully!';
+   }
+
+   // update user phone number
+   if($number != null) {
+      $update_number = $conn->prepare("UPDATE `users` SET number = ? WHERE id = ?");
+      $update_number->execute([$number, $user_id]);
+      $message[] = 'number updated successfully!';
+   }
+
+   $empty_pass = 'da39a3ee5e6b4b0d3255bfef95601890afd80709';
+   $select_old_pass = $conn->prepare("SELECT password FROM `users` WHERE id = ?");
+   $select_old_pass->execute([$user_id]);
+   $fetch_prev_pass = $select_old_pass->fetch(PDO::FETCH_ASSOC);
+   $prev_pass = $fetch_prev_pass['password'];
+   $old_pass = ($_POST['old_pass']);
+   $old_pass = filter_var($old_pass, FILTER_SANITIZE_STRING);
+   $new_pass = ($_POST['new_pass']);
+   $new_pass = filter_var($new_pass, FILTER_SANITIZE_STRING);
+   $confirm_pass = ($_POST['confirm_pass']);
+   $confirm_pass = filter_var($confirm_pass, FILTER_SANITIZE_STRING);
+
+   if($old_pass == $empty_pass){
+      $message[] = 'username updated successfully!';
+   }elseif($old_pass == $empty_pass){
+      if($old_pass != $prev_pass){
+         $message[] = 'old password not matched!';
+      }elseif($new_pass != $confirm_pass){
+         $message[] = 'confirm password not matched!';
+      }else{
+         if($new_pass != $empty_pass){
+            $update_pass = $conn->prepare("UPDATE `admin` SET password = ? WHERE id = ?");
+            $update_pass->execute([$confirm_pass, $admin_id]);
+            $message[] = 'profile updated successfully!';
+         }else{
+            $message[] = 'please enter a new password!';
+         }
+      }
+   }
+}
+
 ?>
 
 <!DOCTYPE html>
