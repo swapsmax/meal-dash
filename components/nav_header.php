@@ -19,17 +19,28 @@
 		</div>
 		<div class="profile">
          <?php
-            $select_profile = $conn->prepare("SELECT * FROM users WHERE id = 1");
-            $select_profile->execute();
-            $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
+            $select_profile = $conn->prepare("SELECT * FROM `users` WHERE id = ?");
+            $select_profile->execute([$user_id]);
+            if($select_profile->rowCount() > 0){
+               $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
          ?>
-         <p><?= $fetch_profile['name']; ?></p>
-         <a href="update_profile.php" class="btn">update profile</a>
-         <div class="flex-btn">
-            <a href="login.php" class="option-btn">login</a>
-            <a href="register.php" class="option-btn">register</a>
+         <p class="name"><?= $fetch_profile['name']; ?></p>
+         <div class="flex">
+            <a href="profile.php" class="btn">Profile</a>
+            <a href="components/user_logout.php" onclick="return confirm('Logout from this website?');" class="delete-btn">Logout</a>
          </div>
-         <a href="components/user_logout.php" onclick="return confirm('logout from this website?');" class="delete-btn">logout</a>
+         <p class="account">
+            <a href="login.php">Login</a> or
+            <a href="register.php">Register</a>
+         </p> 
+         <?php
+            }else{
+         ?>
+            <p class="name">Please Login First!</p>
+            <a href="login.php" class="btn">Login</a>
+         <?php
+          }
+         ?>
       </div>
 </section>
 </header>
