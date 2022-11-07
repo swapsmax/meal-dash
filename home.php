@@ -25,13 +25,27 @@ if(isset($_SESSION['user_id'])){
 <body>
 
 	<?php include 'components/nav_header.php'; ?>
+	
+	<!-- confirmation message -->
+	<?php
+	if(isset($message)){
+	foreach($message as $message){
+		echo '
+		<div class="message">
+			<span>'.$message.'</span>
+			<i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+		</div>
+		';
+	}
+	}
+	?>
 
 	<!-- carousel  -->
 	<div class="carousel">
 
 		<div class="slide fade">
 			<div class="content">
-				<span>Available Now!</span>
+				<span>available now</span>
 				<h3>Capricciosa Special</h3>
 				<a href="menu.php" class="btn">View Menu</a>
 			</div>
@@ -42,8 +56,8 @@ if(isset($_SESSION['user_id'])){
 
 		<div class="slide fade">
 			<div class="content">
-				<span>Available Now!</span>
-				<h3>Very Stacked Doublecheese</h3>
+				<span>available now</span>
+				<h3>v stacked doublecheese</h3>
 				<a href="menu.php" class="btn">View Menu</a>
 			</div>
 			<div class="image">
@@ -53,8 +67,8 @@ if(isset($_SESSION['user_id'])){
 
 		<div class="slide fade">
 			<div class="content">
-				<span>Available Now!</span>
-				<h3>Roast Full Chicken</h3>
+				<span>available now</span>
+				<h3>chimken</h3>
 				<a href="menu.php" class="btn">View Menu</a>
 			</div>
 			<div class="image">
