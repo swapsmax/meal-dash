@@ -1566,6 +1566,10 @@
    padding:2rem;
 }
 
+.checkout .title{
+    text-decoration: solid underline transparent;
+}
+
 .checkout form h3{
    font-size: 2.5rem;
    text-transform: capitalize;
@@ -1574,13 +1578,35 @@
 }
 
 .checkout form .cart-items{
-   background-color: var(--black);
+   background-color: #D8EDDD;
    padding:2rem;
    padding-top: 0;
+   border-radius: 30px;
+}
+
+.checkout form .cart-items .btn{
+   margin-top: 10px;
+   margin-bottom: 20px;
+   display: inline-block;
+   font-size: 20px;
+   padding: 12px 28px;
+   cursor: pointer;
+   text-transform: capitalize;
+   background-color: #4FAE5A;
+   color: white;
+   text-decoration: underline solid transparent;
+   transition: 0.2s linear;
+   border-radius: 25px;
+}
+
+.checkout form .cart-items .btn:hover {
+   background-color: #3F722B;
+   color: white;
+   text-decoration: underline solid transparent;
 }
 
 .checkout form .cart-items h3{
-   color:var(--white);
+   color:#4FAE5A;
 }
 
 .checkout form .cart-items p{
@@ -1589,36 +1615,47 @@
    gap:1.5rem;
    justify-content: space-between;
    margin:1rem 0;
-   line-height: 1.5;
-   font-size: 2rem;
+   line-height: 0.5;
+   font-size: 1rem;
 }
 
-.checkout form .cart-items p .name{
-   color:var(--light-color);
-}
-
-.checkout form .cart-items p .price{
-   color:var(--yellow);
-}
 
 .checkout form .cart-items .grand-total{
-   background-color: var(--white);
    padding:.5rem 1.5rem;
 }
 
-.checkout form .cart-items .grand-total .price{
-   color:var(--red);
-}
+
 
 .checkout form .user-info p{ 
-   font-size: 2rem;
-   line-height: 1.5;
+   font-size: 1rem;
+   line-height: 0;
    padding:1rem 0;
 }
 
 .checkout form .user-info p i{
-   color:var(--light-color);
+   color:#4FAE5A;
    margin-right: 1rem;
+}
+
+.checkout form .user-info .btn{
+    margin-top: 10px;
+   margin-bottom: 20px;
+   display: inline-block;
+   font-size: 20px;
+   padding: 12px 28px;
+   cursor: pointer;
+   text-transform: capitalize;
+   background-color: #4FAE5A;
+   color: white;
+   text-decoration: underline solid transparent;
+   transition: 0.2s linear;
+   border-radius: 25px;
+}
+
+.checkout form .user-info .btn:hover{
+    background-color: #D8EDDD;
+   color: #4FAE5A;
+   text-decoration: underline solid transparent;
 }
 
 .checkout form .user-info p span{
@@ -1628,8 +1665,40 @@
 .checkout form .user-info .box{
    width: 100%;
    border:var(--border);
-   padding:1.4rem;
+   background-color: lightgrey;
+   padding:1rem;
    margin-top: 2rem;
    margin-bottom: 1rem;
-   font-size: 1.8rem;
+   font-size: 1rem;
+   border-radius: 100px;
+}
+
+
+/* orders page */
+
+.orders .box-container{
+   display: flex;
+   flex-wrap: wrap;
+   gap:1.5rem;
+   align-items: flex-start;
+}
+
+.orders .box-container .box{
+   padding:1rem 2rem;
+   border:var(--border);
+   flex:1 1 40rem;
+   background-color: #D8EDDD;
+   margin-bottom: 1rem;
+   border-radius: 25px;
+}
+
+.orders .box-container .box p{
+   line-height: 1.5;
+   margin:1rem 0;
+   font-size: 1rem;
+   color: #4FAE5A;
+}
+
+.orders .box-container .box p span{
+   color:black;
 }
