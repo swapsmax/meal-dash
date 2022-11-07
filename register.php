@@ -63,6 +63,20 @@ if(isset($_POST['submit'])){
 <?php include 'components/nav_header.php'; ?>
 <!-- header section ends -->
 
+<!-- confirmation message -->
+<?php
+if(isset($message)){
+   foreach($message as $message){
+      echo '
+      <div class="message">
+         <span>'.$message.'</span>
+         <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+      </div>
+      ';
+   }
+}
+?>
+
 <section class="form-container">
 
    <form action="" method="post">

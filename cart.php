@@ -52,6 +52,20 @@ $grand_total = 0;
 <body>
     <?php include 'components/nav_header.php'; ?>
 
+    <!-- confirmation message -->
+    <?php
+        if(isset($message)){
+            foreach($message as $message){
+                echo '
+                <div class="message">
+                    <span>'.$message.'</span>
+                    <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+                </div>
+                ';
+            }
+        }
+    ?>
+
     <div class="cart-heading">
         <h3>My Shopping Cart</h3>
     </div>
