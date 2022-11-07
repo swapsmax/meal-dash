@@ -42,7 +42,6 @@ if(isset($_SESSION['user_id'])){
          
       ?>
       <img src="images/user-icon.png" alt="">
-      <p><i class="fas fa-user"></i><span><span>namejshakdahd skd</span></span></p>
       <p><i class="fas fa-user"></i><span><span><?= $fetch_profile['name']; ?></span></span></p>
       <p><i class="fas fa-phone"></i><span><?= $fetch_profile['number']; ?></span></p>
       <p><i class="fas fa-envelope"></i><span><?= $fetch_profile['email']; ?></span></p>
