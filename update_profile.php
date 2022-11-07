@@ -75,15 +75,15 @@ if(isset($_POST['submit'])){
 
    if($old_pass == $empty_pass){
       $message[] = 'username updated successfully!';
-   }elseif($old_pass == $empty_pass){
+   }elseif($old_pass != $empty_pass){
       if($old_pass != $prev_pass){
          $message[] = 'old password not matched!';
       }elseif($new_pass != $confirm_pass){
          $message[] = 'confirm password not matched!';
       }else{
          if($new_pass != $empty_pass){
-            $update_pass = $conn->prepare("UPDATE `admin` SET password = ? WHERE id = ?");
-            $update_pass->execute([$confirm_pass, $admin_id]);
+            $update_pass = $conn->prepare("UPDATE `users` SET password = ? WHERE id = ?");
+            $update_pass->execute([$confirm_pass, $user_id]);
             $message[] = 'profile updated successfully!';
          }else{
             $message[] = 'please enter a new password!';
