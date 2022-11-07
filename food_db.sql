@@ -82,6 +82,9 @@ CREATE TABLE orders (
   payment_status varchar(20) NOT NULL DEFAULT 'pending',
   FOREIGN KEY (user_id) REFERENCES users(id)
 );
+INSERT INTO orders (id, user_id, name, number, email, method, address, total_products, total_price, placed_on, payment_status) VALUES (
+  1, 1, 'user1', '123', 'user1@email', 'paylah', 'address1', 'total_products', 16.80, '10/10/2022', 'paid'
+);
 
 CREATE TABLE messages (
   id int(100) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
