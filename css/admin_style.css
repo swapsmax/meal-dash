@@ -70,21 +70,31 @@ section{
 }
 
 .btn{
-   background-color: var(--main-color);
+   background-color: white;
+   color: black;
+   border-radius: 100px;
+   transition: 0.2s linear;
 }
 
 .delete-btn{
-   background-color: var(--red);
+   background-color: white;
+   color: black;
+   border-radius: 100px;
+   transition: 0.2s linear;
 }
 
 .option-btn{
-   background-color: var(--orange);
+   background-color: white;
+   color: var(--orange);
+   border-radius: 100px;
+   transition: 0.2s linear;
 }
 
 .btn:hover,
 .delete-btn:hover,
 .option-btn:hover{
-   background-color: var(--black);
+   background-color: lightcoral;
+   color: white;
 }
 
 .flex-btn{
@@ -249,15 +259,17 @@ section{
 .header .flex .profile{
    position: absolute;
    top:125%; right:2rem;
-   background-color: var(--white);
+   background-color: lightcoral;
    box-shadow: var(--box-shadow);
-   border-radius: .5rem;
+   border-radius: 30px;
    padding:2rem;
    padding-top: 1rem;
    width: 30rem;
    display: none;
    animation: fadeIn .2s linear;
 }
+
+
 
 @keyframes fadeIn {
    0%{

@@ -27,7 +27,7 @@
             $select_profile->execute([$admin_id]);
             $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
          ?>
-         <p><?= $fetch_profile['name']; ?></p>
+         <p style="color:white;"><?= $fetch_profile['name']; ?></p>
          <a href="update_profile.php" class="btn">Update Profile</a>
          <div class="flex-btn">
             <a href="admin_login.php" class="option-btn">Login</a>
