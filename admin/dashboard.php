@@ -103,7 +103,7 @@ if($admin_id == NULL){
       ?>
       <h3><?= $numbers_of_users; ?></h3>
       <p>Users Accounts</p>
-      <a href="users_accounts.php" class="btn">see users</a>
+      <a href="user_accounts.php" class="btn">see users</a>
    </div>
 
    <div class="box">
