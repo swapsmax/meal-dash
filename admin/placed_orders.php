@@ -48,8 +48,21 @@ if(isset($_GET['delete'])){
 
 <?php include '../components/admin_header.php' ?>
 
-<!-- placed orders section starts  -->
+<!-- confirmation message -->
+<?php
+if(isset($message)){
+   foreach($message as $message){
+      echo '
+      <div class="message">
+         <span>'.$message.'</span>
+         <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+      </div>
+      ';
+   }
+}
+?>
 
+<!-- placed orders section starts  -->
 <section class="placed-orders">
 
    <h1 class="heading">Placed Orders</h1>
