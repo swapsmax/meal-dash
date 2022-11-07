@@ -26,8 +26,8 @@
          <p><?= $fetch_profile['name']; ?></p>
          <a href="update_profile.php" class="btn">update profile</a>
          <div class="flex-btn">
-            <a href="../login.php" class="option-btn">login</a>
-            <a href="../register.php" class="option-btn">register</a>
+            <a href="login.php" class="option-btn">login</a>
+            <a href="register.php" class="option-btn">register</a>
          </div>
          <a href="components/user_logout.php" onclick="return confirm('logout from this website?');" class="delete-btn">logout</a>
       </div>
