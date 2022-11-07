@@ -56,6 +56,20 @@ if(isset($_POST['submit'])){
 
 <?php include '../components/admin_header.php' ?>
 
+<!-- confirmation message -->
+<?php
+if(isset($message)){
+   foreach($message as $message){
+      echo '
+      <div class="message">
+         <span>'.$message.'</span>
+         <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+      </div>
+      ';
+   }
+}
+?>
+
 <!-- register admin section starts  -->
 
 <section class="form-container">
@@ -71,21 +85,6 @@ if(isset($_POST['submit'])){
 </section>
 
 <!-- register admin section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- custom js file link  -->
 <script src="../js/admin_script.js"></script>
