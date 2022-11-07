@@ -39,13 +39,13 @@ if(isset($message)){
                $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
          ?>
          <p class="name"><?= $fetch_profile['name']; ?></p>
-         <div class="flex">
+         
             <a href="profile.php" class="btn">Profile</a>
-            <a href="components/user_logout.php" onclick="return confirm('Logout from this website?');" class="delete-btn">Logout</a>
-         </div>
+            <a href="components/user_logout.php" onclick="return confirm('Logout from this website?');" class="btn">Logout</a>
+         
          <p class="account">
-            <a href="login.php">Login</a> or
-            <a href="register.php">Register</a>
+            <a href="login.php" class="btn">Login</a>
+            <a href="register.php" class="btn">Register</a>
          </p> 
          <?php
             }else{

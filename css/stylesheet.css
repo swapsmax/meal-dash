@@ -114,6 +114,26 @@
    color:black;
 }
 
+.header .nav .profile .account .btn{
+   margin-top: 16px;
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 28px;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-color: white;
+    color: #4FAE5A;
+    text-decoration: underline solid transparent;
+    transition: 0.2s linear;
+    border-radius: 25px;
+}
+
+.header .nav .profile .account .btn:hover{
+   background-color: #D3EEDC;
+    color: #2A6144;
+    text-decoration: underline solid transparent;
+}
+
 .header .nav .profile .account a{
    color:black;
 }
