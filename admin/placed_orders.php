@@ -17,7 +17,15 @@ if(isset($_POST['update_payment'])){
    $update_status = $conn->prepare("UPDATE `orders` SET payment_status = ? WHERE id = ?");
    $update_status->execute([$payment_status, $order_id]);
    $message[] = 'payment status updated!';
+}
 
+if(isset($_POST['update_status'])){
+
+   $order_id = $_POST['order_id'];
+   $order_status = $_POST['order_status'];
+   $update_status = $conn->prepare("UPDATE `orders` SET order_status = ? WHERE id = ?");
+   $update_status->execute([$order_status, $order_id]);
+   $message[] = 'order status updated!';
 }
 
 if(isset($_GET['delete'])){
@@ -85,6 +93,7 @@ if(isset($message)){
       <p> total products : <span><?= $fetch_orders['total_products']; ?></span> </p>
       <p> total price : <span>$<?= $fetch_orders['total_price']; ?>/-</span> </p>
       <p> payment method : <span><?= $fetch_orders['method']; ?></span> </p>
+      <p> payment status : </p>
       <form action="" method="POST">
          <input type="hidden" name="order_id" value="<?= $fetch_orders['id']; ?>">
          <select name="payment_status" class="drop-down">
@@ -94,6 +103,20 @@ if(isset($message)){
          </select>
          <div class="flex-btn">
             <input type="submit" value="update" class="btn" name="update_payment">
+         </div>
+      <p> order status : </p>
+         <input type="hidden" name="order_id" value="<?= $fetch_orders['id']; ?>">
+         <select name="order_status" class="drop-down">
+            <option value="" selected disabled><?= $fetch_orders['order_status']; ?></option>
+            <option value="order submitted">order submitted</option>
+            <option value="in the kitchen">in the kitchen</option>
+            <option value="out for delivery">out for delivery</option>
+            <option value="delivered">delivered</option>
+         </select>
+         <div class="flex-btn">
+            <input type="submit" value="update" class="btn" name="update_status">
+         </div>
+         <div class="flex-btn">
             <a href="placed_orders.php?delete=<?= $fetch_orders['id']; ?>" class="delete-btn" onclick="return confirm('delete this order?');">delete</a>
          </div>
       </form>

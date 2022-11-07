@@ -50,12 +50,12 @@ session_start();
       //    echo '<p class="empty">please login to see your orders</p>';
       // }else{
       // code is altered for styling, 
-            // needs to be corrected for when user sign in can be done
-            // to view cart of another user, manually change user_id = on line 55
-         $select_orders = $conn->prepare("SELECT * FROM `orders` WHERE user_id = 1");
-         $select_orders->execute();
-         if($select_orders->rowCount() > 0){
-            while($fetch_orders = $select_orders->fetch(PDO::FETCH_ASSOC)){
+      // needs to be corrected for when user sign in can be done
+      // to view cart of another user, manually change user_id = on line 55
+      $select_orders = $conn->prepare("SELECT * FROM `orders` WHERE user_id = 1");
+      $select_orders->execute();
+      if($select_orders->rowCount() > 0){
+         while($fetch_orders = $select_orders->fetch(PDO::FETCH_ASSOC)){
    ?>
    <div class="box">
       <p>placed on : <span><?= $fetch_orders['placed_on']; ?></span></p>
