@@ -98,3 +98,6 @@ include 'components/add_cart.php';
 </footer>
 
 </html>
+
+<!-- profile drop down script -->
+<script type="text/javascript" src="js/script.js"></script>
