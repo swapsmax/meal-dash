@@ -12,18 +12,6 @@ if(isset($_SESSION['user_id'])){
    header('location:login.php');
 };
 
-if(isset($_POST['submit'])){
-
-   $address = $_POST['flat'] .', '.$_POST['building'].', '. $_POST['country'] .' - '. $_POST['pin_code'];
-   $address = filter_var($address, FILTER_SANITIZE_STRING);
-
-   $update_address = $conn->prepare("UPDATE `users` set address = ? WHERE id = ?");
-   $update_address->execute([$address, $user_id]);
-
-   $message[] = 'address saved!';
-
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -70,7 +58,22 @@ if(isset($message)){
 
 </section>
 
+
+
+
+
+
+
+
+
+
 <?php include 'components/footer.php' ?>
+
+
+
+
+
+
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
