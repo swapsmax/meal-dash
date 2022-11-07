@@ -19,6 +19,34 @@
   color: red;
 }
 
+.message{
+   position: sticky;
+   top:0;
+   max-width: 1200px;
+   margin:0 auto;
+   background-color: var(--light-bg);
+   padding:2rem;
+   display: flex;
+   align-items: center;
+   gap:1rem;
+   justify-content: space-between;
+}
+
+.message span{
+   font-size: 20px;
+   color:var(--black);
+}
+
+.message i{
+   font-size: 25px;
+   color:#4FAE5A;
+   cursor: pointer;
+}
+
+.message i:hover{
+   color:var(--black);
+}
+
 /* header and nav */
 
 .header {
