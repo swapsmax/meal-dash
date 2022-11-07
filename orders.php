@@ -49,6 +49,9 @@ session_start();
       // if($user_id == ''){
       //    echo '<p class="empty">please login to see your orders</p>';
       // }else{
+      // code is altered for styling, 
+            // needs to be corrected for when user sign in can be done
+            // to view cart of another user, manually change user_id = on line 55
          $select_orders = $conn->prepare("SELECT * FROM `orders` WHERE user_id = 1");
          $select_orders->execute();
          if($select_orders->rowCount() > 0){
