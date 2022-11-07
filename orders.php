@@ -35,13 +35,21 @@ session_start();
 <!-- header section ends -->
 
 <div class="heading">
-   <h3>orders</h3>
-   <p><a href="html.php">home</a> <span> / orders</span></p>
+		<!-- <i class="fa-solid fa-dash"></i> -->
+        <h1>Orders</h1>
+        <h3>Your Placed Orders</h3>
+		<p class="menu-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			incididunt ut labore et dolore magna aliqua. In hendrerit gravida rutrum quisque non tellus.</p>
+        <p class="path">
+			<a href="home.php">Home</a>
+			<span> > Orders</span>
+		</p>
 </div>
 
 <section class="orders">
 
-   <h1 class="title">Your Orders</h1>
+<h1 class="title" style="text-decoration: underline solid transparent;">
+		<b>Your Orders</b></h1>
 
    <div class="box-container">
 
@@ -72,7 +80,7 @@ session_start();
    <?php
       }
       }else{
-         echo '<p class="empty">no orders placed yet!</p>';
+         echo '<p class="empty">No Orders Placed Yet!</p>';
       }
       // }
    ?>

@@ -61,9 +61,16 @@ if(isset($_POST['send'])){
 <!-- header section ends -->
 
 <div class="heading">
-   <h3><br>Contact Us</h3>
-   <p><a href="home.php">home</a> <span> / contact</span></p>
-</div>
+		<!-- <i class="fa-solid fa-dash"></i> -->
+        <h1>W're Here To Help!</h1>
+        <h3>Contact Us</h3>
+		<p class="menu-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			incididunt ut labore et dolore magna aliqua. In hendrerit gravida rutrum quisque non tellus.</p>
+        <p class="path">
+			<a href="home.php">Home</a>
+			<span> > Contact Us</span>
+		</p>
+    </div>
 
 <!-- contact section starts  -->
 

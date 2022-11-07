@@ -88,7 +88,7 @@ include 'components/add_cart.php';
 			<?php
 					}
 				}else{
-					echo '<p class="empty">no products added yet!</p>';
+					echo '<p class="empty">No Products Added Yet!</p>';
 				}
 			?>
 		</div>

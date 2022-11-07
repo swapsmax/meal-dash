@@ -22,6 +22,19 @@
 <!-- header section ends -->
 
 
+<div class="heading">
+		<!-- <i class="fa-solid fa-dash"></i> -->
+        <h1>Find Out More About Meal Dash</h1>
+        <h3>About Us</h3>
+		<p class="menu-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			incididunt ut labore et dolore magna aliqua. In hendrerit gravida rutrum quisque non tellus.</p>
+        <p class="path">
+			<a href="home.php">Home</a>
+			<span> > About</span>
+		</p>
+</div>
+
+
 <!-- about section starts  -->
 
 <section class="about">
