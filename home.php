@@ -1,5 +1,8 @@
 <!-- database connection -->
-<?php include 'components/connect.php'; ?>
+<?php include 'components/connect.php'; 
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -161,3 +164,7 @@
 	setTimeout(showSlides, 4000); // Change image every 4 seconds
 	}
 </script>
+
+
+<!-- admin profile drop down script -->
+<script type="text/javascript" src="js/script.js"></script>
