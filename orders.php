@@ -54,8 +54,14 @@ if(isset($_SESSION['user_id'])){
    <div class="box-container">
 
    <?php
-      $select_orders = $conn->prepare("SELECT * FROM `orders` WHERE user_id = ?");
-      $select_orders->execute([$user_id]);
+      // if($user_id == ''){
+      //    echo '<p class="empty">please login to see your orders</p>';
+      // }else{
+      // code is altered for styling, 
+      // needs to be corrected for when user sign in can be done
+      // to view cart of another user, manually change user_id = on line 55
+      $select_orders = $conn->prepare("SELECT * FROM `orders` WHERE user_id = 1");
+      $select_orders->execute();
       if($select_orders->rowCount() > 0){
          while($fetch_orders = $select_orders->fetch(PDO::FETCH_ASSOC)){
    ?>
@@ -83,9 +89,23 @@ if(isset($_SESSION['user_id'])){
 
 </section>
 
+
+
+
+
+
+
+
+
+
 <!-- footer section starts  -->
 <?php include 'components/footer.php'; ?>
 <!-- footer section ends -->
+
+
+
+
+
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
