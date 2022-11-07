@@ -29,6 +29,7 @@ if(isset($_POST['submit'])){
          if($name != $fetch_profile['name']) {
             $update_name = $conn->prepare("UPDATE `admin` SET name = ? WHERE id = ?");
             $update_name->execute([$name, $admin_id]);
+            $message[] = 'username updated successfully!';
          }
       }
    }
@@ -45,7 +46,9 @@ if(isset($_POST['submit'])){
    $confirm_pass = ($_POST['confirm_pass']);
    $confirm_pass = filter_var($confirm_pass, FILTER_SANITIZE_STRING);
 
-   if($old_pass != $empty_pass){
+   if($old_pass == $empty_pass){
+      $message[] = 'username updated successfully!';
+   }elseif($old_pass == $empty_pass){
       if($old_pass != $prev_pass){
          $message[] = 'old password not matched!';
       }elseif($new_pass != $confirm_pass){
