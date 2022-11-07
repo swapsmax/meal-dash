@@ -33,6 +33,20 @@ include 'components/add_cart.php';
 <body>
     <?php include 'components/nav_header.php'; ?>
 
+	<!-- confirmation message -->
+	<?php
+	if(isset($message)){
+	foreach($message as $message){
+		echo '
+		<div class="message">
+			<span>'.$message.'</span>
+			<i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+		</div>
+		';
+	}
+	}
+	?>
+
     <div class="heading">
 		<!-- <i class="fa-solid fa-dash"></i> -->
         <h1>MENU</h1>
