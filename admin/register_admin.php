@@ -26,14 +26,13 @@ if(isset($_POST['submit'])){
       $message[] = 'username already exists!';
    }else{
       if($pass != $cpass){
-         $message[] = 'confirm passowrd not matched!';
+         $message[] = 'confirm password not matched!';
       }else{
          $insert_admin = $conn->prepare("INSERT INTO `admin`(name, password) VALUES(?,?)");
          $insert_admin->execute([$name, $cpass]);
          $message[] = 'new admin registered!';
       }
    }
-
 }
 
 ?>
