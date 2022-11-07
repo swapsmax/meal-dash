@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
 
    $email = $_POST['email'];
    $email = filter_var($email, FILTER_SANITIZE_STRING);
-   $pass = sha1($_POST['pass']);
+   $pass = $_POST['pass'];
    $pass = filter_var($pass, FILTER_SANITIZE_STRING);
 
    $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ? AND password = ?");
@@ -57,6 +57,8 @@ if(isset($_POST['submit'])){
 
    <form action="" method="post">
       <h3>Login Now</h3>
+      <p style="font-size: 20px"> default username = <span style="color: blue">user1@gmail.com</span> & 
+      password = <span style="color: blue">123</span></p>
       <input type="email" name="email" required placeholder="Enter your email" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
       <input type="password" name="pass" required placeholder="Enter your password" class="box" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
       <input type="submit" value="login now" name="submit" class="btn">
@@ -65,22 +67,7 @@ if(isset($_POST['submit'])){
 
 </section>
 
-
-
-
-
-
-
-
-
-
-
 <?php include 'components/footer.php'; ?>
-
-
-
-
-
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
