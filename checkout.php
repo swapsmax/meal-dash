@@ -74,8 +74,14 @@ if(isset($_POST['submit'])){
 <!-- header section ends -->
 
 <div class="heading">
-   <h3>checkout</h3>
-   <p><a href="home.php">Home</a> <span> / Checkout</span></p>
+      <!-- <i class="fa-solid fa-dash"></i> -->
+        <h1>Done Adding Items?</h1>
+        <h3>Checkout</h3>
+      <p class="menu-desc">Go ahead and check that everything is in order before you make your payment! You can always head back to your cart to make any changes.</p>
+        <p class="path">
+         <a href="cart.php">Cart</a>
+         <span> > Checkout</span>
+      </p>
 </div>
 
 <section class="checkout">
@@ -85,7 +91,7 @@ if(isset($_POST['submit'])){
 <form action="" method="post">
 
    <div class="cart-items">
-      <h3>cart items</h3>
+      <h3 style="font-size: 30px; font-weight: bolder;">CART ITEMS</h3>
       <?php
          $grand_total = 0;
          $cart_items[] = '';
@@ -101,11 +107,11 @@ if(isset($_POST['submit'])){
       <?php
             }
          }else{
-            echo '<p class="empty">your cart is empty!</p>';
+            echo '<p class="empty">Your cart is empty!</p>';
          }
       ?>
-      <p class="grand-total"><span class="name">grand total :</span><span class="price">$<?= $grand_total; ?></span></p>
-      <a href="cart.php" class="btn">veiw cart</a>
+      <p class="grand-total"><span class="name" style="color: #4FAE5A;"><b>Grand Total:</b></span><span class="price" style="color: #4FAE5A;">$<?= $grand_total; ?></span></p>
+      <a href="cart.php" class="btn">View Cart</a>
    </div>
 
    <input type="hidden" name="total_products" value="<?= $total_products; ?>">
@@ -116,22 +122,21 @@ if(isset($_POST['submit'])){
    <input type="hidden" name="address" value="<?= $fetch_profile['address'] ?>">
 
    <div class="user-info">
-      <h3>your info</h3>
+      <h3 style="font-size: 30px; font-weight: bolder;">Your Info</h3>
       <p><i class="fas fa-user"></i><span><?= $fetch_profile['name'] ?></span></p>
       <p><i class="fas fa-phone"></i><span><?= $fetch_profile['number'] ?></span></p>
       <p><i class="fas fa-envelope"></i><span><?= $fetch_profile['email'] ?></span></p>
-      <a href="update_profile.php" class="btn">update info</a>
-      <h3>delivery address</h3>
+      <a href="update_profile.php" class="btn">Update Info</a>
+      <h3 style="font-size: 30px; font-weight: bolder;">Delivery Address</h3>
       <p><i class="fas fa-map-marker-alt"></i><span><?php if($fetch_profile['address'] == ''){echo 'please enter your address';}else{echo $fetch_profile['address'];} ?></span></p>
-      <a href="update_address.php" class="btn">update address</a>
+      <a href="update_address.php" class="btn">Update Address</a>
       <select name="method" class="box" required>
-         <option value="" disabled selected>select payment method --</option>
-         <option value="cash on delivery">cash on delivery</option>
-         <option value="credit card">credit card</option>
-         <option value="paytm">paytm</option>
-         <option value="paypal">paypal</option>
+         <option value="" disabled selected>Select Payment Method --</option>
+         <option value="cash on delivery">Cash On Delivery</option>
+         <option value="credit card">Credit/Debit Card</option>
+         <option value="paypal">PayPal</option>
       </select>
-      <input type="submit" value="place order" class="btn <?php if($fetch_profile['address'] == ''){echo 'disabled';} ?>" style="width:100%; background:var(--red); color:var(--white);" name="submit">
+      <input type="submit" value="Place Order" class="btn <?php if($fetch_profile['address'] == ''){echo 'disabled';} ?>" style="width:100%; background:#4FAE5A; color:white; padding: 1rem; border-radius: 100px; font-size: 16px; border:var(--border);" name="submit">
    </div>
 
 </form>
