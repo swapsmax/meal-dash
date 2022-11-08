@@ -148,7 +148,7 @@ if(isset($message)){
          <option value="" disabled selected>Select Payment Method --</option>
          <option value="cash on delivery">Cash On Delivery</option>
          <option value="credit card">Credit/Debit Card</option>
-         <option value="paypal">PayPal</option>
+         <option value="paypal">PayLah/Paynow QR</option>
       </select>
       <input type="submit" value="Place Order" class="btn <?php if($fetch_profile['address'] == ''){echo 'disabled';} ?>" style="width:100%; background:#4FAE5A; color:white; padding: 1rem; border-radius: 100px; font-size: 16px; border:var(--border);" name="submit">
    </div>
