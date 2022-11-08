@@ -51,8 +51,7 @@ include 'components/add_cart.php';
 		<!-- <i class="fa-solid fa-dash"></i> -->
         <h1>MENU</h1>
         <h3>Discover Our Menu</h3>
-		<p class="menu-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-			incididunt ut labore et dolore magna aliqua. In hendrerit gravida rutrum quisque non tellus.</p>
+		<p class="menu-desc">We have one of the widest menu with mouthwatering dishes to pick from, a delicious line of desserts and thirst-quenching drinks to satisfy your cravings.</p>
         <p class="path">
 			<a href="home.php">Home</a>
 			<span> > Menu</span>

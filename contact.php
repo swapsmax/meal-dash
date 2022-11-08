@@ -78,8 +78,7 @@ if(isset($message)){
 		<!-- <i class="fa-solid fa-dash"></i> -->
         <h1>W're Here To Help!</h1>
         <h3>Contact Us</h3>
-		<p class="menu-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-			incididunt ut labore et dolore magna aliqua. In hendrerit gravida rutrum quisque non tellus.</p>
+		<p class="menu-desc">Something wrong with your order? Or maybe you have something you'd like our help with? <br>Drop us a message below and we'll get back to you ASAP!</p>
         <p class="path">
 			<a href="home.php">Home</a>
 			<span> > Contact Us</span>

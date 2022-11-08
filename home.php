@@ -47,7 +47,7 @@ include 'components/add_cart.php';
 
 		<div class="slide fade">
 			<div class="content">
-				<span>available now</span>
+				<span>Available now!</span>
 				<h3>Capricciosa Special</h3>
 				<a href="menu.php" class="btn">View Menu</a>
 			</div>
@@ -58,8 +58,8 @@ include 'components/add_cart.php';
 
 		<div class="slide fade">
 			<div class="content">
-				<span>available now</span>
-				<h3>v stacked doublecheese</h3>
+				<span>Available now!</span>
+				<h3>Very Stacked Doublecheese</h3>
 				<a href="menu.php" class="btn">View Menu</a>
 			</div>
 			<div class="image">
@@ -69,8 +69,8 @@ include 'components/add_cart.php';
 
 		<div class="slide fade">
 			<div class="content">
-				<span>available now</span>
-				<h3>chimken</h3>
+				<span>Available now!</span>
+				<h3>Roast Full Chicken</h3>
 				<a href="menu.php" class="btn">View Menu</a>
 			</div>
 			<div class="image">

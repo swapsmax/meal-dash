@@ -42,8 +42,7 @@ include 'components/add_cart.php';
 		<!-- <i class="fa-solid fa-dash"></i> -->
         <h1>Find Out More About Meal Dash</h1>
         <h3>About Us</h3>
-		<p class="menu-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-			incididunt ut labore et dolore magna aliqua. In hendrerit gravida rutrum quisque non tellus.</p>
+		<p class="menu-desc">See what people have to say about us or find out how you can order your food quickly.</p>
         <p class="path">
 			<a href="home.php">Home</a>
 			<span> > About</span>
@@ -58,7 +57,7 @@ include 'components/add_cart.php';
    <div class="row">
       <div class="content">
          <h3 style=""><br><br>Why Choose Us?</h3>
-         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, neque debitis incidunt qui ipsum sed doloremque a molestiae in veritatis ullam similique sunt aliquam dolores dolore? Quasi atque debitis nobis!<br></p>
+         <p>We're Singapore's no. 1 food delivery service - offering islandwide free delivery, updates on where your food is and top notch customer support to solve all your problems.<br>What're you waiting for? Check out our full menu and start ordering your favourite dishes!<br></p>
          <a href="menu.php" class="btn">Our Menu</a>
       </div>
 
@@ -78,20 +77,20 @@ include 'components/add_cart.php';
 
       <div class="box">
          <img src="images/step-1.png" alt="">
-         <h3>choose order</h3>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, dolorem.</p>
+         <h3>Choose Order</h3>
+         <p>Add your favourite dishes to cart.<br>We even have drinks and desserts!</p>
       </div>
 
       <div class="box">
          <img src="images/step-2.png" alt="">
-         <h3>fast delivery</h3>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, dolorem.</p>
+         <h3>Fast Delivery</h3>
+         <p>Place your order, sit back and relax while we prepare it and deliver it to you.</p>
       </div>
 
       <div class="box">
          <img src="images/step-3.png" alt="">
-         <h3>enjoy food</h3>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, dolorem.</p>
+         <h3>Enjoy Your Food</h3>
+         <p>Dig in! If there are any concerns, contact us and we'd be glad to help!</p>
       </div>
 
    </div>
@@ -111,7 +110,7 @@ include 'components/add_cart.php';
           <div class="col">
             <div class="testimonial">
               <img src="images/pic-1.png" alt="">
-              <div class="name">Full name</div>
+              <div class="name">James Carter</div>
               <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -121,7 +120,7 @@ include 'components/add_cart.php';
               </div>
 
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                Meal Dash has some of the yummiest dishes and the one of the fastest food delivery services in Singapore. It has become my GO TO every day.
               </p>
             </div>
           </div>
@@ -129,7 +128,7 @@ include 'components/add_cart.php';
           <div class="col">
             <div class="testimonial">
               <img src="images/pic-2.png" alt="">
-              <div class="name">Full name</div>
+              <div class="name">Mary Seld</div>
               <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -139,7 +138,7 @@ include 'components/add_cart.php';
               </div>
 
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                I love ordering via Meal Dash! They have exxcellent customer service which is always quick to respond.
               </p>
             </div>
           </div>
@@ -147,7 +146,7 @@ include 'components/add_cart.php';
           <div class="col">
             <div class="testimonial">
               <img src="images/pic-3.png" alt="">
-              <div class="name">Full name</div>
+              <div class="name">John Lee</div>
               <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -157,7 +156,7 @@ include 'components/add_cart.php';
               </div>
 
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                Be it catering for a large order or simple dinners with my family, Meal Dash never fails to deliver excellent service, delicious food and the best desserts to end the night well.
               </p>
             </div>
           </div>
