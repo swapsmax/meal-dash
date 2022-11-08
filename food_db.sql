@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 08, 2022 at 05:46 AM
+-- Generation Time: Nov 08, 2022 at 05:51 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.1.6
 
@@ -136,7 +136,7 @@ INSERT INTO `products` (`id`, `name`, `category`, `price`, `image`) VALUES
 (9, 'Iced Bandung', 'drinks', 2.00, 'bandung.png'),
 (10, 'Vegan Laksa', 'main dish', 6.00, 'vegan-laksa.jpeg'),
 (11, 'Prata Set (w Curry)', 'main dish', 4.00, 'prata-set.jpeg'),
-(12, 'Chocolate Chip Cookies (4 pc)', 'desserts', 4.00, 'chocolate-chip-cookies.png'),
+(12, 'Chocolate Chip Cookies', 'desserts', 4.00, 'chocolate-chip-cookies.png'),
 (13, 'Vanilla Cake Slice', 'desserts', 3.00, 'vanilla-cake.jpeg'),
 (14, 'Chocolate Cake Slice', 'desserts', 3.00, 'chocolate-cake.jpeg'),
 (15, 'Banana Split', 'desserts', 6.00, 'banana-split.jpeg'),
